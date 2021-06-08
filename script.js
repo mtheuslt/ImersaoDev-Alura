@@ -7,7 +7,7 @@ projectsData = {
       'Introdução ao JavaScript com o desenvolvimento de um conversor de unidades.',
       'Primeiro programa feito com JavaScript e CodePen, usando variáveis.',
     ],
-    img: 'https://github.com/mtheuslt/matheuscv/blob/master/img/Aula%201%20-%20Alura.jpg?raw=true',
+    img: 'https://github.com/mtheuslt/ImersaoDev-Alura/blob/main/img/Aula01.png?raw=true',
   },
   calculadora: {
     title: 'Calculadora',
@@ -18,7 +18,7 @@ projectsData = {
       'Introdução ao "if" e "else", utilizados para identificar qual a operação deve ser realizada.',
       'Demonstração da manipulação do documento HTML',
     ],
-    img: 'https://github.com/mtheuslt/matheuscv/blob/master/img/Aula%202%20-%20Alura.jpg?raw=true',
+    img: 'https://github.com/mtheuslt/ImersaoDev-Alura/blob/main/img/Aula02.png?raw=true',
   },
   mentalista: {
     title: 'Mentalista',
@@ -28,7 +28,7 @@ projectsData = {
       'Criado um jogo de adivinhar o número escolhido pelo computador',
       'Apresentado o "while" para a criação de loops. Neste caso criou-se um loop para verificar as tentativas restantes.',
     ],
-    img: 'https://github.com/mtheuslt/matheuscv/blob/master/img/Aula%203%20-%20Alura.jpg?raw=true',
+    img: 'https://github.com/mtheuslt/ImersaoDev-Alura/blob/main/img/Aula03.png?raw=true',
   },
   aluraflix: {
     title: 'Aluraflix - TrailerFlix',
@@ -39,7 +39,7 @@ projectsData = {
       'Apresentação de Array de dados e alguns métodos para a manipulação dos mesmos.',
       'Introdução do "for", também utilizado para a criação de loops',
     ],
-    img: 'https://github.com/mtheuslt/matheuscv/blob/master/img/Aula%204%20-%20Alura.jpg?raw=true',
+    img: 'https://github.com/mtheuslt/ImersaoDev-Alura/blob/main/img/Aula04_05.png?raw=true',
   },
   tabela: {
     title: 'Tabela de Classificação',
@@ -50,7 +50,7 @@ projectsData = {
       'Introdução aos Objetos, como forma de armazenamento de dados',
       'Manipulação do documento HTML com uso do JavaScript',
     ],
-    img: 'https://github.com/mtheuslt/matheuscv/blob/master/img/Aula%206.1%20-%20Alura.jpg?raw=true',
+    img: 'https://github.com/mtheuslt/ImersaoDev-Alura/blob/main/img/Aula06.png?raw=true',
   },
   supertrunfo: {
     title: 'Supertrunfo',
@@ -60,7 +60,7 @@ projectsData = {
       'Elaborado um jogo no estilo "Supertrunfo" onde o jogador disputa contra o computador',
       'Projeto com a aplicação dos conhecimentos obtidos durante a imersão',
     ],
-    img: 'https://github.com/mtheuslt/matheuscv/blob/master/img/Aula%209%20-%20Alura.jpg?raw=true',
+    img: 'https://github.com/mtheuslt/ImersaoDev-Alura/blob/main/img/Aula07-09.png?raw=true',
   },
   certificard: {
     title: 'CertifiCard',
@@ -70,7 +70,7 @@ projectsData = {
       'Este projeto foi desenvolvido para ser um híbrido de certificado da imersão com um cartão dos projetos desenvolvidos.',
       'Nessa aula foram passados conhecimentos relativos ao uso do HTML e CSS.',
     ],
-    img: 'https://github.com/mtheuslt/matheuscv/blob/master/img/Aula%2010%20-%20Alura.jpg?raw=true',
+    img: 'https://github.com/mtheuslt/ImersaoDev-Alura/blob/main/img/AulaFinal%20-%20Certificado.png?raw=true',
   },
 }
 
