@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+html,body {
+    height: 100%;
+    background-color: #2148C0;
+    background-image: url(https://i.ibb.co/jR3NgH3/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.clear {
+    clear: both;
+}
+.container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+.creditos {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.creditos span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 20px;
+}
+.creditos a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.creditos a:hover {
+    color: #03195e;
+}
+.creditos img {
+    position: relative;
+    top: -10px;
+    width: 126px;
+    height: auto;
+}
+.quadrado-branco {
+    width: 70%;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 5%;
+}
+.apresentacao-conversor-titulo {
+    text-align: center;
+}
+.apresentacao-conversor-titulo img {
+    width: 80px;
+    height: auto;
+}
+.apresentacao-conversor-titulo h2 {
+    margin-top: 40px;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+.container-moeda {
+    margin-top: 10%;
+}
+.moedas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: violet; */
+}
+.moedas-container input[type=submit] {
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    background: #2148C0;
+    border: 0;
+    border-radius: 10px;
+}
+.moedas-container input[type=submit]:hover {
+    background: #1c40ac;
+}
+.moedas-container-moeda {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+}
+.moeda-usd-container {
+    /* float: left; */
+    width: 30%;
+    margin-right: 20px;
+}
+.moeda-usd {
+    cursor: pointer;
+    padding: 20px;
+    background: white;
+    width: 100%;
+    height: auto;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.moeda-usd:hover {
+   background-color: rgb(245, 245, 245);
+}
+.moeda-usd img {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+.moeda-usd h2 {
+    width: 100%;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.moeda-usd-container input[type=text] {
+    margin-top: 20px;
+    border: 0;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+}
+.moeda-brl-container {
+    /* float: right; */
+    width: 30%;
+}
+.moeda-brl {
+    cursor: pointer;
+    padding: 20px;
+    background: white;
+    width: 100%;
+    height: auto;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.moeda-brl:hover {
+    background-color: rgb(245, 245, 245);
+}
+.moeda-brl-convertida {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    width: 100%;
+    height: auto;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.moeda-brl-convertida h2 {
+    width: 100%;
+    font-size: 14px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+.moeda-brl img {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+.moeda-brl h2 {
+    width: 100%;
+    font-size: 14px;
+    margin-left: 20px;
+}
+@media screen and (max-width: 1140px) {
+    .quadrado-branco {
+        width: 90%;
+        height: auto;
+    }
+    .moedas-container {
+        align-items: none;
+    }
+    .moedas-container-moeda {
+        display: block;
+    }
+    .moeda-usd-container {
+        width: 100%;
+        margin-right: none;
+    }
+    .moeda-brl-container {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .moedas-container input[type=submit] {
+        width: 100%;
+    }
+    .creditos {
+        margin: 40px 4%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .creditos span {
+        margin-right: none;
+    }
+    .creditos img {
+        margin-top: 20px;
+        position: none;
+        top: none;
+    }
+}

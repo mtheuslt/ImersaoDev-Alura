@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Projeto Mentalista - Aula 03</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<body>
+    <div class="container">
+        <h1 class="page-title">Mentalista</h1><br>
+      <form name="sendbox" onsubmit="return false">
+        <label for="fname" class="page-subtitle">Você consegue advinhar o número secreto<br/>entre 0 e 100?</label>
+        <br><br>
+        <p id='escolhaDificuldade' class="page-subtitle">Escolha o seu nível de dificuldade:<br></p>
+        <input type="number" id="chute" name="chute">
+        <br>
+        <input type="button" class="submit" id='botaoFacil' value="Fácil">
+        <input type="button" class="submit" id='botaoNormal' value="Normal">
+        <input type="button" class="submit" id='botaoDificil' value="Difícil">
+        <br>
+        <input type="submit" class="submit" id='botaoVerificar' value="Verificar" onclick="verificar()">
+        <br><br>
+      </form>
+      <h2 id='resposta'></h2>
+      <p>Você tem: <span id="displayPontos">0</span></p>
+      <p id="displayTentativas"></p><br>
+      <button id='botaoNovoJogo' onclick='novoJogo()'>Novo número</button> 
+        <div class="creditos">
+                <span>Desenvolvido por <a href="https://github.com/mtheuslt" target="_blank" >Matheus Silva</a> na ImersãoDev realizada pela:</span>
+                <a target="_blank" href='https://www.alura.com.br/'><img style='cursor: pointer' src="https://www.alura.com.br/assets/img/home/alura-logo.svg"/></a>
+    </div>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

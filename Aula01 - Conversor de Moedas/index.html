@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Projeto Conversor de Moedas - Aula 01</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+    <body>
+        <div class="container">
+            <div class="quadrado-branco">
+                <div class="apresentacao-conversor-titulo" >
+                    <img src="https://i.ibb.co/RD7Pv8S/Vectorconvert.png"/> 
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <h1>Conversor de Moedas - 06/02/2021</h1>
+                </div>
+                <form class="container-moeda" onsubmit="return false">
+                    <div class="moedas-container">
+                        <div class="moedas-container-moeda">
+                            <div class="moeda-usd-container">
+                                <div class="moeda-usd">
+                                    <img src="https://i.ibb.co/SQphK6f/euaicon.png"/>
+                                    <h2>USD / Dolar</h2>
+                                </div>
+                                <input type="text" id="valor" placeholder="Digite um valor em dolares"/>
+            
+                            </div>
+                            <div class="moeda-brl-container">
+                                <div class="moeda-brl">
+                                    <img src="https://i.ibb.co/7XCVY0g/brlicon.png"/>
+                                    <h2>BRL / Real</h2>
+                                </div>
+                                <div class="moeda-brl-convertida" id="convertidoavisos2">
+                                    <h2 id="valorConvertido">Aguardando ação...</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" onclick="conversor()" value="Converter"/>
+                    </div>
+                </form>
+            </div>
+            <div class="creditos">
+                <span>Desenvolvido por <a href="https://github.com/mtheuslt" target="_blank" >Matheus Silva</a> na ImersãoDev realizada pela:</span>
+                <a target="_blank" href='https://www.alura.com.br/'><img style='cursor: pointer' src="https://www.alura.com.br/assets/img/home/alura-logo.svg"/></a>
+            </div>
+        </div>
+    </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

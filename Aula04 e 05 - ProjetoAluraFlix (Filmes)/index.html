@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Projeto AluraFlix (TrailerFlix) - Aula 04 e 05</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="cabecalho">
+        <a class="logo" href="#">TrailerFlix</a>
+        <ul class="menu">
+          <li><a id="filmes" href="#">Filmes</a></li>
+          <li><a id="series" href="#">Séries</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="conteudo">
+      <!-- Update Aula05 -->
+      <div class="categoria inserir">
+        <div class="campo">
+          <label for="imagem">Imagem</label>
+          <input type="url" id="imagem" placeholder="Insira o url(link) da imagem" autofocus>
+        </div>
+        <div class="campo">
+          <label for="nota">Nota</label>
+          <input type="number" id="nota" min="0" max="10" placeholder="0 a 10">
+        </div>
+        <div class="campo">
+          <label for="trailer">Trailer</label>
+          <input type="url" id="trailer" placeholder="Insira o url(link) yotube">
+        </div>
+        <div class="campo">
+          <label for="tipo">Filme ou Série?</label>
+          <select id="tipo">
+            <option value="filme">Filme</option>
+            <option value="serie">Série</option>
+          </select>
+        </div>
+        <div class="campo">
+          <button onclick="InserirNovoCartaz()">Adicionar</button>
+        </div>
+        <div class="campo">
+          <div class="alerta"></div>
+        </div>
+      </div>
+      <!-- Fim Update Aula05 -->
+      <!-- Categoria -->
+      <div class="categoria filmes">
+        <h1 class="titulo">Filmes</h1>
+        <div class="cartazes">
+
+        </div>
+      </div>
+
+      <!-- Categoria -->
+      <div class="categoria series">
+        <h1 class="titulo">Séries</h1>
+        <div class="cartazes">
+
+        </div>
+      </div>
+    </main>
+    <!-- Trailer -->
+    <div class="modal hide">
+      <button class="fechar">X</button>
+
+    </div>
+        <div class="creditos">
+                <span>Desenvolvido por <a href="https://github.com/mtheuslt" target="_blank" >Matheus Silva</a> na ImersãoDev realizada pela:</span>
+                <a target="_blank" href='https://www.alura.com.br/'><img style='cursor: pointer' src="https://www.alura.com.br/assets/img/home/alura-logo.svg"/></a>
+  </div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Projeto Calculadora - Aula 02</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script language="JavaScript" src="calculadora.js"></script>
+
+<body>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  
+  <form action="" name="calc">
+    <div id="calculadora">
+      <input type="text" id="visor" name="visor">
+      <div id="primeira">
+        <input type="button" value="7" class="botao borda" onclick="botao(value)">
+        <input type="button" value="8" class="botao borda" onclick="botao(value)">
+        <input type="button" value="9" class="botao borda" onclick="botao(value)">
+        <input type="button" value="/" class="botao borda" onclick="botao(value)">
+      </div>
+      
+      <div id="segunda">
+        <input type="button" value="4" class="botao borda" onclick="botao(value)">
+        <input type="button" value="5" class="botao borda" onclick="botao(value)">
+        <input type="button" value="6" class="botao borda" onclick="botao(value)">
+        <input type="button" value="*" class="botao borda" onclick="botao(value)">
+      </div>
+      
+        <div id="terceira">
+        <input type="button" value="1" class="botao borda" onclick="botao(value)">
+        <input type="button" value="2" class="botao borda" onclick="botao(value)">
+        <input type="button" value="3" class="botao borda" onclick="botao(value)">
+        <input type="button" value="-" class="botao borda" onclick="botao(value)">
+      </div>
+      
+      <div id="quarta">
+        <input type="button" value="C" class="botao borda" onclick="reseta()">
+        <input type="button" value="0" class="botao borda" onclick="botao(value)">
+        <input type="button" value="=" class="botao borda" onclick="calcula()">
+        <input type="button" value="+" class="botao borda" onclick="botao(value)">
+      </div>
+    </div>
+    
+    <div class="creditos">
+                <span>Desenvolvido por <a href="https://github.com/mtheuslt" target="_blank" >Matheus Silva</a> na ImersãoDev realizada pela:</span>
+                <a target="_blank" href='https://www.alura.com.br/'><img style='cursor: pointer' src="https://www.alura.com.br/assets/img/home/alura-logo.svg"/></a>
+    </form>
+  </body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

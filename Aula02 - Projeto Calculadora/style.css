@@ -1,0 +1,116 @@
+body{
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #002b49;
+}
+
+input[type=button]{
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 5px black;
+  outline: none;
+  transition: ease 0.2s;
+  width: 100px;
+    height: 50px;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+div#calculadora {
+box-shadow: 0 0 20px black;
+  border-radius: 0px 0px 40px 40px;
+}
+input{
+  font-family: 'Oswald', sans-serif;
+  outline: none;
+  margin: 2px;
+  border: none;
+}
+input[type=text]{
+  outline: none;
+width: calc(100% - 8px);
+  font-size: 35px;
+  border: none;
+  height: 50px
+}
+
+div#quarta input:nth-child(1){
+  background: #f11a1a;
+  border-bottom-left-radius: 35px;
+}
+
+div#quarta input:nth-child(3){
+  background: #1a4cf1;
+}
+
+div#quarta input:nth-child(4){
+  border-bottom-right-radius: 35px;
+}
+div#primeira input:nth-child(4){
+  background: lightgray;
+}
+div#segunda input:nth-child(4){
+  background: lightgray;
+}
+div#terceira input:nth-child(4){
+  background: lightgray;
+}
+div#quarta input:nth-child(4){
+  background: lightgray;
+}
+
+input[type=button]:hover{
+  outline: none;
+  filter: brightness(75%);
+}
+input[type=button]:active{
+  transform: scale(0.95);
+  outline: none;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right:10px;
+  }
+
+.creditos {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.creditos span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 20px;
+}
+.creditos a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.creditos a:hover {
+    color: #03195e;
+}
+.creditos img {
+    position: relative;
+    top: -10px;
+    width: 126px;
+    height: auto;
+}
+
+h1{
+  font-size: 25px;
+  text-align: center;
+}

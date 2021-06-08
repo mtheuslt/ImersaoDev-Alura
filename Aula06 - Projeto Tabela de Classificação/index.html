@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Projeto Tabela de Classificação - Aula 06</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<body>
+    <h1>Tabela de Classificação</h1>
+
+    <input type="text" id=nomeNovoJogador placeholder="Digite o nome do jogador">
+    <button onclick="novoJogador()"> Adicionar jogador</button>
+    <br /><br /><br />
+    <button onclick="Remover()"> Remover ultimo Jogador</button>
+    <br /><br /><br />
+  
+    <table style="width:100%">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Vitórias</th>
+                <th>Empates</th>
+                <th>Derrotas</th>
+                <th>Pontos</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaJogadores">
+             <!-- <tr>
+    <td>Paulo</td>
+    <td>2</td>
+    <td>1</td>
+    <td>1</td>
+    <td>7</td>
+    <td><button onClick="adicionarVitoria()">Vitória</button></td>
+    <td><button onClick="adicionarEmpate()">Empate</button></td>
+    <td><button onClick="adicionarDerrota()">Derrota</button></td>
+    <td><button onClick="zerarPontuacao()">Zerar Pontos</button></td>            
+  </tr>
+  <tr>
+    <td>Rafa</td>
+    <td>1</td>
+    <td>4</td>
+    <td>2</td>
+    <td>7</td>
+    <td><button onClick="adicionarVitoria()">Vitória</button></td>
+    <td><button onClick="adicionarEmpate()">Empate</button></td>
+    <td><button onClick="adicionarDerrota()">Derrota</button></td>
+    <td><button onClick="zerarPontuacao()">Zerar Pontos</button></td>
+  </tr> -->
+        </tbody>
+    </table>
+      <div class="creditos">
+                <span>Desenvolvido por <a href="https://github.com/mtheuslt" target="_blank" >Matheus Silva</a> na ImersãoDev realizada pela:</span>
+                <a target="_blank" href='https://www.alura.com.br/'><img style='cursor: pointer' src="https://www.alura.com.br/assets/img/home/alura-logo.svg"/></a>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
