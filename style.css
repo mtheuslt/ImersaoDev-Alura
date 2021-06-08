@@ -1,103 +1,221 @@
-projectsData = {
-  conversor: {
-    title: 'Conversor de Moedas',
-    link: 'https://codepen.io/Arcadya/pen/zYNdaVM',
-    description: [
-      'Projeto - Aula 1.',
-      'Introdução ao JavaScript com o desenvolvimento de um conversor de unidades.',
-      'Primeiro programa feito com JavaScript e CodePen, usando variáveis.',
-    ],
-    img: 'https://github.com/mtheuslt/ImersaoDev-Alura/blob/main/img/Aula01.png?raw=true',
-  },
-  calculadora: {
-    title: 'Calculadora',
-    link: 'https://codepen.io/Arcadya/pen/OJWjwgj',
-    description: [
-      'Projeto - Aula 2.',
-      'Criada uma calculadora para as operações de soma, subtração, multiplicação e divisão.',
-      'Introdução ao "if" e "else", utilizados para identificar qual a operação deve ser realizada.',
-      'Demonstração da manipulação do documento HTML',
-    ],
-    img: 'https://github.com/mtheuslt/ImersaoDev-Alura/blob/main/img/Aula02.png?raw=true',
-  },
-  mentalista: {
-    title: 'Mentalista',
-    link: 'https://codepen.io/Arcadya/pen/jOyLpdQ',
-    description: [
-      'Projeto - Aula 3.',
-      'Criado um jogo de adivinhar o número escolhido pelo computador',
-      'Apresentado o "while" para a criação de loops. Neste caso criou-se um loop para verificar as tentativas restantes.',
-    ],
-    img: 'https://github.com/mtheuslt/ImersaoDev-Alura/blob/main/img/Aula03.png?raw=true',
-  },
-  aluraflix: {
-    title: 'Aluraflix - TrailerFlix',
-    link: 'https://codepen.io/Arcadya/pen/jOyLvOJ',
-    description: [
-      'Projeto - Aulas 4 e 5.',
-      'Criada uma página que monta um painel de imagens com os links fornecidos pelo usuário.',
-      'Apresentação de Array de dados e alguns métodos para a manipulação dos mesmos.',
-      'Introdução do "for", também utilizado para a criação de loops',
-    ],
-    img: 'https://github.com/mtheuslt/ImersaoDev-Alura/blob/main/img/Aula04_05.png?raw=true',
-  },
-  tabela: {
-    title: 'Tabela de Classificação',
-    link: 'https://codepen.io/Arcadya/pen/abpyaBm',
-    description: [
-      'Projeto - Aula 6',
-      'Criada uma tabela de classificação com base no número de vitórias, derrotas e empates',
-      'Introdução aos Objetos, como forma de armazenamento de dados',
-      'Manipulação do documento HTML com uso do JavaScript',
-    ],
-    img: 'https://github.com/mtheuslt/ImersaoDev-Alura/blob/main/img/Aula06.png?raw=true',
-  },
-  supertrunfo: {
-    title: 'Supertrunfo',
-    link: 'https://codepen.io/Arcadya/pen/wvgqEQL',
-    description: [
-      'Projeto - Aulas 7 a 9.',
-      'Elaborado um jogo no estilo "Supertrunfo" onde o jogador disputa contra o computador',
-      'Projeto com a aplicação dos conhecimentos obtidos durante a imersão',
-    ],
-    img: 'https://github.com/mtheuslt/ImersaoDev-Alura/blob/main/img/Aula07-09.png?raw=true',
-  },
-  certificard: {
-    title: 'CertifiCard',
-    link: 'https://codepen.io/Arcadya/pen/MWJvqxj',
-    description: [
-      'Projeto - Aula 10.',
-      'Este projeto foi desenvolvido para ser um híbrido de certificado da imersão com um cartão dos projetos desenvolvidos.',
-      'Nessa aula foram passados conhecimentos relativos ao uso do HTML e CSS.',
-    ],
-    img: 'https://github.com/mtheuslt/ImersaoDev-Alura/blob/main/img/AulaFinal%20-%20Certificado.png?raw=true',
-  },
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
 }
 
-function closePreview() {
-  const previewBox = document.querySelector('.previewBox');
-  previewBox.style.opacity = 0;
-  previewBox.style.pointerEvents = 'none';
+body {
+  background-image: url('https://cdn.shopify.com/s/files/1/0249/7003/5297/articles/Earth_from_space_1024x.jpeg?v=1591781942');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-function openPreview(project) {
-  const previewBox = document.querySelector('.previewBox');
-  updateProjectData(project);
-  previewBox.style.opacity = 1;
-  previewBox.style.pointerEvents = 'all';
+.card {
+  width: 500px;
+  max-width: 100%;
+  background: #333;
+  padding: 1rem;
+  border-radius: 2.5%;
 }
 
-function updateProjectData(project) {
-  const projectTitleHTML = document.getElementById('projectTitle');
-  const projectImgHTML = document.getElementById('projectImg');
-  projectImgHTML.setAttribute('src', '');
-  const projectTextHTML = document.getElementById('projectText');
-  const projectLinkHTML = document.getElementById('projectLink');
-  
-  projectTitleHTML.innerHTML = projectsData[project].title;
-  projectImgHTML.setAttribute('src', projectsData[project].img);
-  projectTextHTML.innerHTML = projectsData[project].description.reduce((text, paragraph) => {
-    return text + `<p>${paragraph}</p>`;
-  }, '');
-  projectLinkHTML.setAttribute('href', projectsData[project].link);
+.card * {
+  color: white;
+}
+
+
+.card h1 {
+  margin-bottom: 0;
+}
+
+.socialLink, .websiteLink {
+  display: inline-block;
+  border-radius: 10px;
+  transition: 400ms;
+}
+
+.socialLink:hover, .socialLink:focus, .websiteLink:hover, .websiteLink:focus {
+  background-color: #628cd7;
+}
+
+.socialLink {
+  font-size: 0;
+  height: 1.8rem;
+}
+
+.socialLink svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.websiteLink {
+  padding: 0.2rem;
+  vertical-align: top;
+}
+
+header {
+  background: linear-gradient(120deg, #628cd7 0, 20%, #444 20%, 35%, #00779f 35%, 55%, transparent 55%),
+              linear-gradient(-120deg, #628cd7 0, 20%, #444 20%, 35%, #00779f 35%, 55%, transparent 55%);
+  height: 5rem;
+  width: 100%;
+  border-radius: 1%;
+}
+
+.card-image {
+  display: block;
+  margin: 0 auto;  
+  transform: translate(0, -5rem);
+  width: 10rem;
+  border: 0.25rem solid #628cd7;
+  border-radius: 50%;
+}
+
+.linksBox {
+  margin-bottom: 1rem;
+}
+
+.card-pinsBox {
+  position: relative;
+  background: #111;
+  border-radius: 5%;
+  padding: 1rem 2rem 1rem;
+}
+
+.previewBox {
+  transition: 400ms;
+  position: absolute;
+  inset: 0;
+  background: #111;
+  border-radius: 5%;
+  padding: 1rem 2rem 1rem;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.previewBox button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.previewBox button::before, .previewBox button::after {
+  display: inline-block;
+  content: ' ';
+  width: 15px;
+  height: 15px;
+}
+
+.previewBox button::before {
+  border-top: 0.25rem solid #00779f;
+  border-right: 0.25rem solid #00779f;
+  transform: translatex(-1px) rotate(45deg);
+}
+
+.previewBox button::after{
+  border-bottom: 0.25rem solid #00779f;
+  border-left: 0.25rem solid #00779f;
+  transform: translatex(1px) rotate(45deg);
+}
+
+.projectInfo {
+  width: 100%;
+  height: 12.625rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.projectInfo img {
+  display: inline-block;
+  min-width: 50%;
+  max-width: 50%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.projectInfo-description {
+  width: 50%;
+  max-height: 100%;
+  padding: 0 0.5rem;
+  overflow: hidden visible;
+}
+
+.projectInfo-description a {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #00779f;
+  border-radius: 10px;
+  padding: .2rem;
+  transition: 400ms;
+}
+
+.projectInfo-description a:hover, .projectInfo-description a:focus {
+  background-color: #628cd7;
+}
+
+.item-projectList {
+  margin-bottom: 0.5rem;
+}
+
+.item-projectList button {
+  position: relative;
+  transition: 400ms;
+  background: none;
+  border: 1px solid #00779f;
+  border-radius: 10px;
+  z-index: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.item-projectList button::before {
+  transition: 400ms;
+  content: ' ';
+  transform: scalex(0);
+  position: absolute;
+  inset: 0;
+  background: #628cd7;
+  z-index: -1;
+  transform-origin: 25px 50%;
+}
+
+.item-projectList button:hover::before, .item-projectList button:focus::before {
+  transform: scalex(1);
+}
+
+.creditos {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    color: white;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.creditos span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 20px;
+}
+.creditos a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.creditos a:hover {
+    color: #03195e;
+}
+.creditos img {
+    position: relative;
+    top: -10px;
+    width: 126px;
+    height: auto;
 }
